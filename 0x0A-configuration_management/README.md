@@ -1,0 +1,1 @@
+this is a project to understand the server configuration management  tools  called Puppet. the project shows how to create a file somewhere using puppet, how to install the puppet-lint, and how to excute a command using puppet
