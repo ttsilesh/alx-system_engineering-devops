@@ -5,9 +5,12 @@ sudo apt-get update -y
 sudo apt-get install -y nginx
 
 # configure Nginx
-ufw allow 'Nginx HTTP'
+sudo ufw allow 'Nginx HTTP'
 sudo sed -i 's/80 default_server/80/' /etc/nginx/sites-available/default
-sudo service nginx restart
 
 # create index.html file served out by server:
 echo 'Hello World!' | sudo tee /var/www/html/index.html > /dev/null
+
+#testing and restarting nginx conf
+sudo nginx -t
+sudo service nginx restart
