@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# login to web-01 remote server
+
+#setting SSH Agent
+eval $("ssh-agent")
+
+#patht to identify private key
+ssh-add ~/.ssh/school
+
+#username and ip address
+ssh ubuntu@54.160.79.12
